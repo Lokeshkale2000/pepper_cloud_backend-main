@@ -1,10 +1,10 @@
 {
   "name": "form-builder-backend",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "node server.js",
+    "dev": "nodemon server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +17,6 @@
     "express": "^4.21.1",
     "form-builder-backend": "file:",
     "mongoose": "^8.8.1",
-    "vercel": "^32.3.0"
+    "vercel": "^37.14.0"
   }
 }
