@@ -23,11 +23,7 @@ const formSchema = new mongoose.Schema({
 
 const Form = mongoose.model('Form', formSchema);
 
-
-app.use(cors({
-    origin: '*', // This allows all origins
-   // Allowed headers
-  }));
+app.use(cors());
 app.use(express.json());
 
 
