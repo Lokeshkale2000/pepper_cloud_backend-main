@@ -17,14 +17,14 @@ router.post('/form', async (req, res) => {
 });
 
 
-router.get('/forms', async (req, res) => {
-  try {
-    const forms = await Form.find();
-    res.status(200).json(forms);
-  } catch (error) {
-    res.status(500).json({ message: 'Error fetching forms', error });
-  }
-});
+router.get('/forms', async (_req, res) => {
+    try {
+      const forms = await Form.find();  
+      res.status(200).json(forms); 
+    } catch (error) {
+      res.status(500).json({ message: 'Error fetching forms', error });  // Handle any errors
+    }
+  });
 
 
 router.get('/form/:id', async (req, res) => {
